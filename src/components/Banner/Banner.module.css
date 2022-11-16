@@ -1,0 +1,53 @@
+.banner {
+
+position: absolute;
+width: 1240px;
+height: 223px;
+left: 100px;
+top: 171px;
+
+}
+
+.bannerContent {
+
+position: absolute;
+width: 1240px;
+height: 223px;
+left: 100px;
+top: 171px;
+background: #000000;
+mix-blend-mode: darken;
+opacity: 0.3;
+border-radius: 25px;
+}
+
+.img {
+
+position: absolute;
+width: 1278px;
+height: 1933px;
+left: 100px;
+top: -573px;
+    
+}
+
+.title {
+
+position: absolute;
+width: 705px;
+height: 68px;
+left: 25.9%;
+right: 25.14%;
+top: 24.32%;
+bottom: 69.04%;
+color: #FFFFFF;
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 48px;
+line-height: 142.6%;
+/* or 68px */
+display: flex;
+align-items: flex-end;
+
+}
