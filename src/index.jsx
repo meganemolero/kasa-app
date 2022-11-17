@@ -5,8 +5,6 @@ import App from './App.js';
 import { BrowserRouter as Router} from 'react-router-dom';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-coucou
-
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
