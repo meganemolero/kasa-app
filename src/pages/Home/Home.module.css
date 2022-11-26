@@ -6,6 +6,20 @@ height: 1024px;
 background: white;
 }
 
+.section {
+
+position: absolute;
+width: 1240px;
+height: 829px;
+left: 100px;
+top: 437px;
+border-radius: 25px;
+background: #F7F7F7;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+    
+    }
 /*=============Media Queries=============*/
 
 @media (max-width: 480px){
