@@ -6,9 +6,9 @@ import AboutCSS from "../About/About.module.css"
 
 export default function About() {
     return (
-        <div className= {AboutCSS.about}>   
+        <div className= {AboutCSS.about} class="about">   
             <Banner src= {ImgBannerAbout} alt="Photo de montagnes" />
-            <div className={AboutCSS.container}>
+            <div className={AboutCSS.container} class="container">
                 <Collapse  
                     title="Fiabilité"
                     content="Les annonces postées sur Kasa garantissent une fiablilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."

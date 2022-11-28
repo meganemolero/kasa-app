@@ -6,7 +6,7 @@ height: 1024px;
 background: white;
 }
 
-.section {
+.homeCard {   
 
 position: absolute;
 width: 1240px;
@@ -18,8 +18,20 @@ background: #F7F7F7;
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
-    
-    }
+}
+
+.card {
+
+width: 340px;
+height: 340px;
+border-radius: 10px;
+display: flex;
+justify-content: flex-start;
+align-items: flex-start;
+margin: 32px;
+background: linear-gradient(180deg, rgba(255,255,255,0)0%, rgba(0,0,0,0.5)100%);
+background: #FF6060;
+}
 /*=============Media Queries=============*/
 
 @media (max-width: 480px){

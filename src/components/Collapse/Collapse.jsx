@@ -1,4 +1,4 @@
-import CollapseCSS from '../Collapse/Collapse.module.css'
+import './Collapse.css'
 import { useState } from 'react'
 import arrowCollapse from '../../datas/Images/arrowCollapse.png'
 
@@ -7,20 +7,20 @@ export default function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
 
     return isOpen ? (
-        <div className={CollapseCSS.container}>
-            <div className={CollapseCSS.title} onClick= {() => setIsOpen(false)}>
+        <div class="collapseContainer">
+            <div class="collapseTitle" onClick= {() => setIsOpen(false)}>
                 {title}
-                <img src={arrowCollapse} className={CollapseCSS.arrowOpen} alt='flèche de déroulement du cartouche' />
+                <img src={arrowCollapse} class="collapseArrowOpen" alt='flèche de déroulement du cartouche' />
             </div>
-            <div className={CollapseCSS.content}>
+            <div class="collapseContent">
                 {content}
             </div>
         </div>    
     ) : (
-        <div className={CollapseCSS.container}>
-            <div className={CollapseCSS.title} onClick= {() => setIsOpen(true)}>
+        <div class="collapseContainer">
+            <div class="collapseTitle" onClick= {() => setIsOpen(true)}>
                 {title}
-                <img src={arrowCollapse} className={CollapseCSS.arrow} alt='flèche de déroulement du cartouche'/>
+                <img src={arrowCollapse} class="collapseArrow" alt='flèche de déroulement du cartouche'/>
             </div> 
         </div>
     )

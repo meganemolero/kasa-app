@@ -1,10 +1,8 @@
-import CardCSS from '../Card/Card.module.css'
-
-
+import './Card.css'
 
 export default function Card(props){
     return (
-        <div className={CardCSS.section}class="section">
+        <div class="section">
             <img 
                 src={props.cover} 
                 alt="Logement séléctionné" 

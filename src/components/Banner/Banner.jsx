@@ -1,13 +1,11 @@
-import BannerCSS from '../Banner/Banner.module.css';
-import BannerPhoto from '../../datas/Images/ImgBannerHome.png';
+import './Banner.css';
 
-export default function Banner() {
+export default function Banner({ src, title, alt }) {
     return(
-        <div className={BannerCSS.banner}class="banner">
-            
-            <div className={BannerCSS.bannerContent}class="bannerContent">
-                <img className={BannerCSS.img} class="img" src={ BannerPhoto} alt='Falaise en bord de mer'/>
-                <h1 className={BannerCSS.title} class="title">Chez vous, partout et ailleurs</h1>
+        <div class="banner"> 
+            <div class="bannerContent">
+                <img class="img" src={ src } alt={ alt }/>
+                <h1 class="title">{ title }</h1>
             </div>
         </div>
     )
