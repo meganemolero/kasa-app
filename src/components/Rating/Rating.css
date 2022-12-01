@@ -1,11 +1,11 @@
-.container {
+.ratingContainer {
 
 width: 196px;
 height: 36px;
 position: absolute;
 
 }
-.star {
+.ratingStar {
 
 width: 30px;
 height: 30px;

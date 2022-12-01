@@ -1,0 +1,62 @@
+.header {
+
+
+margin: 2rem 4rem 0 4rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+    
+}
+
+.headerLogo {
+
+width: 18.2%;
+height: 5%;
+}
+
+.headerNav {
+
+margin-top: 10px;
+    
+  
+}
+
+a {
+
+margin: 10px;
+text-decoration: none;
+color: #ff6060;
+font-family: Montserrat, sans-serif;
+font-weight: 400;
+font-size: 24px;
+text-decoration-line: underline;
+}
+
+/*============Media Queries=========*/
+
+@media only screen and (max-width: 425px){ 
+
+a {
+
+font-size: 12px;
+}
+}
+@media only screen and (min-width: 425px) and (max-width: 768px) {
+
+.headerLogo {
+
+margin-top: 20px;
+width: 145px;
+height: 47px;
+}
+
+a {
+
+font-size: 16px;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+a {
+font-size: 20px;
+}
+}

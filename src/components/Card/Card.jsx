@@ -1,14 +1,20 @@
 import './Card.css'
 
-export default function Card(props){
+export default function Card({Link, title, cover}) {
     return (
-        <div class="section">
-            <img 
-                src={props.cover} 
-                alt="Logement séléctionné" 
-                class="img"
-            />
-            <h1 class="title">{props.title}</h1>   
+        <div>
+            <a href= {Link} className="cardContainer">
+                <figure>
+                    <img src={cover} alt="Différents logements disponibles" className="cardImg"/>
+                    <figcaption className="cardTitle">{title}</figcaption>   
+                </figure>
+            </a>
         </div>
     )
 }
+
+
+
+
+
+

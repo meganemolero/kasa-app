@@ -1,24 +1,27 @@
 .collapseContainer {
 
-width: 1023px;
-height: 184px;
+width: 100%;
+padding-right: 4rem;
 
 }
 
-.collapseitle {
+.collapseTitle {
 
-width: 1023px;
+width: auto;
 height: 47px;
-background: #FF6060;
 border-radius: 5px;
+background: #ff6060;
+margin-top: 1rem;
 display: flex;
 justify-content: space-between;
 align-items: center;
+padding: 0rem 1rem 0rem 1rem;
 font-family: "Montserrat";
+font-style: normal;
 font-weight: 500;
 font-size: 24px;
-line-height: 34.22px;
-color: #FFFFFF;
+line-height: 142.6%;
+color: #ffffff;
 
 }
 
@@ -36,13 +39,16 @@ transition: all 0.2s;
 
 .collapseContent {
 
-width: 1023px;
-color: #FF6060;
+background: #f7f7f7;
 border-radius: 5px;
-background: #F7F7F7;
 font-family: "Montserrat";
+font-style: normal;
 font-weight: 400;
 font-size: 24px;
-line-height: 34.22px;
+line-height: 142.6%;
+/* or 34px */
+color: #ff6060;
+padding: 1rem 2rem 1rem 2rem;
+width: auto;
 
 }

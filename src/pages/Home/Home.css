@@ -1,0 +1,11 @@
+.homeCard {
+
+margin: 58px 64px 32px 64px;
+padding: 32px;
+border-radius: 25px;
+background: #F7F7F7;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+
+}

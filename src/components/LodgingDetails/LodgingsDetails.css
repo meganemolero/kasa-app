@@ -1,0 +1,86 @@
+.lodgingDetailsContainer {
+
+display: flex;
+justify-content: space-between;
+align-items: flex-start;
+margin: 30px 60px 30px 60px;
+}
+
+.lodgingDetailsLeftSideDetails {
+
+width: 80%;
+}
+
+.lodgingDetailsTitle {
+
+font-weight: 500;
+font-size: 36px;
+line-height: 142.6%;
+/* or 51px */
+color: #ff6060;
+}
+
+.lodgingDetailsLocation {
+
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+/* identical to box height, or 26px */
+color: #ff6060;
+}
+
+.lodgingDetailsTags {
+
+display: flex;
+justify-content: flex-start;
+align-items: center;
+margin-top: 20px;
+margin-bottom: 24px;
+}
+
+.lodgingDetailsTagInfos {
+
+display: flex;
+justify-content: center;
+align-items: center;
+margin-right: 10px;
+background: #ff6060;
+border-radius: 10px;
+width: 20%;
+height: 25px;
+font-weight: 500;
+font-size: 14px;
+line-height: 142.6%;
+/* identical to box height, or 20px */
+text-align: center;
+color: #ffffff;
+}
+
+.lodgingDetailsRightSideDetails {
+
+width: 18%;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+
+.lodgingDetailsHostName {
+
+font-size: 18px;
+line-height: 142.6%;
+/* or 26px */
+display: flex;
+align-items: flex-end;
+text-align: right;
+color: #ff6060;
+padding-right: 10px;
+}
+
+.lodgingDetailsHostPicture {
+
+background: #c4c4c4;
+width: 64px;
+height: 64px;
+border-radius: 90%;
+object-fit: cover;
+}

@@ -1,5 +1,4 @@
-import React from "react"
-import LodgingsCSS from '../Lodgings/Lodgings.module.css'
+import './Lodgings.css'
 import Slideshow from '../../components/Slideshow/Slideshow'
 import LodgingDetails from '../../components/LodgingDetails/LodgingDetails'
 import Collapse from '../../components/Collapse/Collapse'
@@ -12,16 +11,29 @@ import Logements from "../../datas/lodging.json"
 export default function Lodgings() {
     let { id }= useParams();
     const OneLodging = Logements.find((OneLodging) => OneLodging.id ===id)
+    const equipments = OneLodging.equipments;
     
     return (
-        <div className={LodgingsCSS.container} class="container">
-            <Slideshow />
-            <LodgingDetails />
-            <div class="collapse">
-                <Collapse key={OneLodging.pictures}/>
-                <Collapse />
+        <div className="LodgingsContainer">
+            <Slideshow key={OneLodging.pictures} photos={OneLodging.pictures}/>
+            <LodgingDetails key={OneLodging.title} lodgingDetails={OneLodging}/>
+            <div className="LodgingsCollapse">
+                <Collapse 
+                    key={OneLodging.description}
+                    title="Description"
+                    content={OneLodging.description}
+                    />
+                <Collapse 
+                    key={OneLodging.equipments}
+                    title="Equipements"
+                    content={equipments.map((equipements) => (
+                        <li key={equipements} style={{listStyle: "none"}}>
+                            {equipements}
+                        </li>
+                    ))}  
+                />
             </div>
-            
+    
         </div>
     )
 }

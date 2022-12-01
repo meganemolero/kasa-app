@@ -1,14 +1,14 @@
 import Banner from "../../components/Banner/Banner"
 import ImgBannerAbout from "../../datas/Images/ImgBannerAbout.png"
 import Collapse from "../../components/Collapse/Collapse"
-import AboutCSS from "../About/About.module.css"
+import "./About.css"
 
 
 export default function About() {
     return (
-        <div className= {AboutCSS.about} class="about">   
+        <div className="about">   
             <Banner src= {ImgBannerAbout} alt="Photo de montagnes" />
-            <div className={AboutCSS.container} class="container">
+            <div className="aboutContainer">
                 <Collapse  
                     title="Fiabilité"
                     content="Les annonces postées sur Kasa garantissent une fiablilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes."

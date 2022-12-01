@@ -7,20 +7,20 @@ export default function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
 
     return isOpen ? (
-        <div class="collapseContainer">
-            <div class="collapseTitle" onClick= {() => setIsOpen(false)}>
+        <div className="collapseContainer">
+            <div className="collapseTitle" onClick= {() => setIsOpen(false)}>
                 {title}
-                <img src={arrowCollapse} class="collapseArrowOpen" alt='flèche de déroulement du cartouche' />
+                <img src={arrowCollapse} className="collapseArrowOpen" alt='flèche de déroulement du cartouche' />
             </div>
-            <div class="collapseContent">
+            <div className="collapseContent">
                 {content}
             </div>
         </div>    
     ) : (
-        <div class="collapseContainer">
-            <div class="collapseTitle" onClick= {() => setIsOpen(true)}>
+        <div className="collapseContainer">
+            <div className="collapseTitle" onClick= {() => setIsOpen(true)}>
                 {title}
-                <img src={arrowCollapse} class="collapseArrow" alt='flèche de déroulement du cartouche'/>
+                <img src={arrowCollapse} className="collapseArrow" alt='flèche de déroulement du cartouche'/>
             </div> 
         </div>
     )

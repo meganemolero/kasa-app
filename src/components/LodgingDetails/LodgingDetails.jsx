@@ -1,24 +1,26 @@
-import LodgingDetailsCSS from '../LodgingDetails/LodgingsDetails.module.css'
+import './LodgingsDetails.css'
 import Rating from '../Rating/Rating'
 
 export default function LodgingDetails({lodgingsDetails}) {
 
 return(
 
-    <div class="container">
-        <div className={LodgingDetailsCSS.leftSideDetails} class="leftSideDetails">
-            <h1 class="title">{lodgingsDetails.title}</h1>
-            <p class="location">{lodgingsDetails.location}</p>
-            <div class="tags">
+    <div className="lodgingDetailsContainer">
+        <div className="lodgingDetailsLeftSideDetails">
+            <h1 className="lodgingDetailsTitle">{lodgingsDetails.title}</h1>
+            <p className="lodgingDetailsLocation">{lodgingsDetails.location}</p>
+            <div className="lodgingDetailsTags">
                 {lodgingsDetails.tags.map ((numberOfTags) =>
-                (<div class="tagInfos" key={numberOfTags+lodgingsDetails.id}>{numberOfTags}</div>)
+                (<div className="lodgingDetailsTagInfos" key={numberOfTags+lodgingsDetails.id}>{numberOfTags}</div>)
                 )}
             </div>
         </div>
-        <div class="rightSideDetails">
-            <h1 class="hostName">{lodgingsDetails.host.name}</h1>
-            <img src={lodgingsDetails.host.picture} alt="Propriétaire du logement" class="hostPicture" />
-            <Rating />
+        <div className="lodgingDetailsRightSideDetails">
+            <h1 className="lodgingDetailsHostName">{lodgingsDetails.host.name}</h1>
+            <img src={lodgingsDetails.host.picture} alt="Propriétaire du logement" className="lodgingDetailsHostPicture" />
+            <Rating 
+                key={lodgingsDetails.rating}
+            />
         </div>
     </div>
 )
