@@ -1,11 +1,21 @@
 .homeCard {
 
-margin: 58px 64px 32px 64px;
-padding: 32px;
-border-radius: 25px;
-background: #F7F7F7;
 display: flex;
-justify-content: space-around;
+justify-content: center;
+margin-top: 15px;
+margin-left: 30px;
 flex-wrap: wrap;
+width: 95%;
+background: #e3e3e3;
+border-radius: 25px;
 
+}
+
+.homeCardContainer {
+
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 95%;
 }
