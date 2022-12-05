@@ -1,15 +1,22 @@
 import './Card.css'
 
-export default function Card({Link, title, cover}) {
+export default function Card(props) {
     return (
-            <div>
-                <a href= {Link} className="cardContainer">
-                    <figure>
-                        <img src={cover} alt="Différents logements disponibles" className="cardImg"/>
-                        <figcaption className="cardTitle">{title}</figcaption>   
-                    </figure>
-                </a>
-            </div>
+            <>
+                <figure 
+                    key={props.logements.id}
+                    onClick={() => window.location.href = `/lodgings/${props.logements.id}`}>
+                    <img 
+                        src={props.logements.cover} 
+                        alt={props.logements.title }
+                    />
+                    <figcaption>
+                        <h2>
+                            {props.logements.title}
+                        </h2>
+                    </figcaption>   
+                </figure>
+            </>
     )
 }
 

@@ -5,13 +5,13 @@ margin: 30px 60px 30px 60px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-    
+width: 100%;
 }
 
 .headerLogo {
 
-width: 18.2%;
-height: 5%;
+width: 210.32px;
+height: 68px;
 }
 
 .headerNav {
