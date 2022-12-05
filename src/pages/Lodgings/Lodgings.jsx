@@ -27,11 +27,7 @@ export default function Lodgings() {
                 <Collapse 
                     key={oneLodging.equipments}
                     title="Equipements"
-                    content={equipments.map((equipements) => (
-                        <li key={equipements} style={{listStyle: "none"}}>
-                            {equipements}
-                        </li>
-                    ))}  
+                    content={equipments}    
                 />
             </div>
     
