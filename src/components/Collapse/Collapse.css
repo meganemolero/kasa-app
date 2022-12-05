@@ -1,13 +1,12 @@
-.collapseContainer {
 
-width: 100%;
-padding-right: 4rem;
 
-}
+
+
+
+
 
 .collapseTitle {
 
-width: auto;
 height: 47px;
 border-radius: 5px;
 background: #ff6060;
@@ -15,7 +14,7 @@ margin-top: 1rem;
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0rem 1rem 0rem 1rem;
+padding: 10px 15px;
 font-family: "Montserrat";
 font-style: normal;
 font-weight: 500;

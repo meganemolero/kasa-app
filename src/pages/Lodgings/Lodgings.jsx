@@ -10,21 +10,22 @@ import Logements from "../../datas/lodging.json"
 
 export default function Lodgings() {
     let { id }= useParams();
-    const OneLodging = Logements.find((OneLodging) => OneLodging.id ===id)
-    const equipments = OneLodging.equipments;
-    
+    const LogId = ({id})
+
+    const oneLodging = Logements.find(e => e.id ===LogId.id)
+    const equipments = oneLodging.equipments;
     return (
         <div className="LodgingsContainer">
-            <Slideshow key={OneLodging.pictures} photos={OneLodging.pictures}/>
-            <LodgingDetails key={OneLodging.title} lodgingDetails={OneLodging}/>
+            <Slideshow key={oneLodging.pictures} photos={oneLodging.pictures}/>
+            <LodgingDetails key={oneLodging.title} lodgingDetails={oneLodging}/>
             <div className="LodgingsCollapse">
                 <Collapse 
-                    key={OneLodging.description}
+                    key={oneLodging.description}
                     title="Description"
-                    content={OneLodging.description}
+                    content={oneLodging.description}
                     />
                 <Collapse 
-                    key={OneLodging.equipments}
+                    key={oneLodging.equipments}
                     title="Equipements"
                     content={equipments.map((equipements) => (
                         <li key={equipements} style={{listStyle: "none"}}>

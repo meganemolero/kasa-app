@@ -1,15 +1,21 @@
 import './Card.css'
+import Lodgings from '../../datas/lodging.json'
 
-export default function Card({Link, title, cover}) {
+export default function Card() {
     return (
-        <div>
-            <a href= {Link} className="cardContainer">
-                <figure>
-                    <img src={cover} alt="Différents logements disponibles" className="cardImg"/>
-                    <figcaption className="cardTitle">{title}</figcaption>   
-                </figure>
-            </a>
-        </div>
+        <section className='homeCard'>
+            <div className='homeCardContainer'>
+                {Lodgings.map((logements) => (
+                    <a href= {`/lodgings/`+ logements.id} key={logements.id}>
+                        <figure>
+                            <img src={logements.cover} alt="Différents logements disponibles" className="cardImg"/>
+                            <figcaption className="cardTitle">{logements.title}</figcaption>
+                        </figure>
+                    </a>
+                ))}
+    
+            </div>
+        </section>
     )
 }
 
@@ -18,3 +24,10 @@ export default function Card({Link, title, cover}) {
 
 
 
+
+                
+                    
+                        
+                            
+                            
+    
