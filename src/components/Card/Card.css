@@ -1,7 +1,27 @@
 
 
+.homeCard {
 
-.cardContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    margin-left: 30px;
+    flex-wrap: wrap;
+    width: 95%;
+    background: #e3e3e3;
+    border-radius: 25px;
+    
+}
+    
+.homeCardContainer {
+    
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+width: 95%;
+}
+.CardLink {
 
 width: 340px;
 height: 340px;
@@ -19,7 +39,6 @@ margin-bottom: 32px;
 width: 340px;
 height:340px;
 object-fit: cover;
-
 position: absolute;
 border-radius: 10px;
 

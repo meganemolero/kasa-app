@@ -5,15 +5,16 @@ export default function Card() {
     return (
         <section className='homeCard'>
             <div className='homeCardContainer'>
-                {Lodgings.map((logements) => (
-                    <a href= {`/lodgings/`+ logements.id} key={logements.id}>
-                        <figure>
-                            <img src={logements.cover} alt="Différents logements disponibles" className="cardImg"/>
-                            <figcaption className="cardTitle">{logements.title}</figcaption>
-                        </figure>
-                    </a>
-                ))}
-    
+                {Lodgings.map((locations) => {
+                    return (
+                        <a href= {`/lodgings/`+ locations.id} key={locations.id} className='CardLink'>
+                            <figure>
+                                <img src={locations.cover} alt="Différents logements disponibles" className="cardImg"/>
+                                <figcaption className="cardTitle">{locations.title}</figcaption>
+                            </figure>
+                        </a>
+                    )
+                    })}
             </div>
         </section>
     )
