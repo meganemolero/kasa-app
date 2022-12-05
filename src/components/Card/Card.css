@@ -1,60 +1,43 @@
 
 
-.homeCard {
+.cardContainer {
 
+    width: 30%;
+    height: 340px;
     display: flex;
-    justify-content: center;
-    margin-top: 15px;
-    margin-left: 30px;
-    flex-wrap: wrap;
-    width: 95%;
-    background: #e3e3e3;
-    border-radius: 25px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-bottom: 40px;
     
-}
     
-.homeCardContainer {
     
-display: flex;
-justify-content: center;
-align-items: center;
-flex-wrap: wrap;
-width: 95%;
-}
-.CardLink {
+    }
+    
+    .cardImg {
+    
+    
+    width: 340px;
+    height:340px;
+    object-fit: cover;
+    position: absolute;
+    border-radius: 10px;
+    
+    }
+    
+    .cardTitle {
+    
+    
+    position: relative;
+    width: 310px;
+    padding-left: 16px;
+    padding-top: 280px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25.67px;
+    color: #FFFFFF;
+    }
 
-width: 340px;
-height: 340px;
-display: flex;
-justify-content: flex-start;
-align-items: flex-start;
-margin-bottom: 32px;
+    
 
-
-
-}
-
-.cardImg {
-
-width: 340px;
-height:340px;
-object-fit: cover;
-position: absolute;
-border-radius: 10px;
-
-}
-
-.cardTitle {
-
-position: relative;
-width: 310px;
-padding-left: 16px;
-padding-top: 280px;
-overflow-wrap: break-word;
-font-family: "Montserrat";
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 25.67px;
-color: #FFFFFF;
-}
+    
