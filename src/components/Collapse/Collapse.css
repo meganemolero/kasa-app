@@ -18,6 +18,7 @@
     width: 100%;
     padding: 20px 10px;
     height: 47px;
+    font-size: 24px;
 }
 
 .collapseArrow {
@@ -40,6 +41,7 @@ border-radius: 0 0 5px 5px;
 width: 100%;
 margin-bottom: 15px;
 padding: 20px 10px;
+font-size: 24px;
 }
 .collapseContent ul {
     list-style-type: none;

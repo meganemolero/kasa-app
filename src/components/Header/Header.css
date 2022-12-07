@@ -63,6 +63,9 @@ height: 70px;
         text-transform: uppercase;
     }
 }
+
+/***********************************Media Queries*****************************/
+
 @media all and (max-width: 345px){
 
     nav {
