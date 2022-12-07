@@ -1,29 +1,24 @@
-
-
-
-
-
-
-
-.collapseTitle {
-
-height: 47px;
-border-radius: 5px;
-background: #ff6060;
-margin-top: 1rem;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 10px 15px;
-font-family: "Montserrat";
-font-style: normal;
-font-weight: 500;
-font-size: 24px;
-line-height: 142.6%;
-color: #ffffff;
-
+.collapseContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 25px;
 }
 
+.collapseTitle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #ff6060;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    width: 100%;
+    padding: 20px 10px;
+    height: 47px;
+}
 
 .collapseArrow {
 
@@ -38,16 +33,39 @@ transition: all 0.2s;
 
 .collapseContent {
 
-background: #f7f7f7;
-border-radius: 5px;
-font-family: "Montserrat";
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 142.6%;
-/* or 34px */
+background-color: #f6f6f6;
 color: #ff6060;
-padding: 1rem 2rem 1rem 2rem;
-width: auto;
-
+font-weight: 400;
+border-radius: 0 0 5px 5px;
+width: 100%;
+margin-bottom: 15px;
+padding: 20px 10px;
 }
+.collapseContent ul {
+    list-style-type: none;
+}
+
+/******************Media Queries***************/
+
+@media all and (max-width: 768px) {
+    .collapseTitle {
+        height: 30px;
+        font-size: 13px;
+        font-weight: 500;
+    }
+
+    .collapseArrow .collapseArrowOpen {
+        width: 15px;
+        height: 9px;
+    }
+    .collapseContent {
+        font-size: 12px;
+        font-weight: 400;
+    }
+    
+}
+
+
+
+
+

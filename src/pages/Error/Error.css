@@ -3,41 +3,55 @@
 display: flex;
 flex-direction: column;
 align-items: center;
-margin: 2rem 4rem 2rem 4rem;
+text-align: center;
+margin-top: 120px;
+margin-bottom: 20px;
 }
 
 .errorNumber {
 
-font-family: "Montserrat";
-font-style: normal;
-font-weight: 700;
-font-size: 288px;
-line-height: 142.6%;
-/* or 411px */
-color: #ff6060;
+width: 95%;
 }
 
 .errorText {
 
-margin: 4rem 2rem 8rem 2rem;
-font-family: "Montserrat";
-font-style: normal;
-font-weight: 500;
+width: 95%;
 font-size: 36px;
-line-height: 142.6%;
-/* or 51px */
+font-weight: 500;
 color: #ff6060;
+margin: 50px 0;
 }
 
 .errorBacklink {
 
-margin-bottom: 8rem;
-font-family: "Montserrat";
-font-style: normal;
-font-weight: 500;
+text-decoration: none;
 font-size: 18px;
-line-height: 142.6%;
-/* identical to box height, or 26px */
-text-decoration-line: underline;
+font-weight: 500;
 color: #ff6060;
+margin: 100px 0;
 }
+
+.errorBacklink:hover {
+
+text-decoration: underline;
+}
+
+/********************Media Queries******************/
+@media all and (max-width:768px) {
+    .errorNumber {
+        width: 200px;
+        height: 100px;
+    }
+    
+    .errorText {
+        width: 80%;
+        font-size: 18px;
+        margin: 20px 0;
+    }
+
+    .errorBacklink {
+        font-size: 14px;
+        text-decoration: underline;
+    }
+}
+

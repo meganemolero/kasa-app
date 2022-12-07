@@ -1,28 +1,45 @@
-import { useState } from "react";
 import './Slideshow.css';
+import { useState } from "react";
+import { useParams } from "react-router-dom";
+import Logements from "../../datas/lodging.json"
 import leftArrow from '../../datas/Images/leftArrow.png';
 import rightArrow from '../../datas/Images/rightArrow.png'
 
-export default function Slideshow({ photos }) {
-    const [currentPhoto, setCurrentPhoto] = useState(0)
-
-    const lenght = photos.lenght
+export default function Slideshow() {
+    const {id} =useParams();
+    const {pictures} = Logements.find ((log) => log.id === id);
+    const [currentPhoto, setCurrentPhoto] = useState(0);
 
     const nextPicture = () => {
-        setCurrentPhoto(currentPhoto === lenght -1 ? 0 : currentPhoto +1)
+        setCurrentPhoto(currentPhoto === pictures.length -1 ? 0 : currentPhoto +1)
     }
     const previousPicture = () => {
-        setCurrentPhoto(currentPhoto === 0 ? lenght -1 : currentPhoto -1)
+        setCurrentPhoto(currentPhoto === 0 ? pictures.length -1 : currentPhoto -1)
     }
+
     return (
         <section className="slideshowContainer">
-            <div className="slideshow">
-                <img src={photos[currentPhoto]} alt={photos.title} className="slideshowImg" key={photos.id}/>    
-            </div>
-            <img src={leftArrow} alt="flèche de défilement gauche" className={ photos.lenght === 1 ? "slideshowLeftArrowInvisible" : "slideshowLeftArrow"} onClick={previousPicture}/>
-            <div className={photos.lenght === 1 ? "slideshowPhotoNumberInvisible" : "slideshowPhotoNumber"}>{currentPhoto + 1}/{photos.lenght}</div>
-            <img src={rightArrow} alt="flèche de défilement droite" className={ photos.lenght ===1 ? "slideshowRightArrowInvisible" : "slideshowRightArrow"} onClick={nextPicture}/>
-        </section>
-    )
+            {pictures.length > 1 && (
+                <img className="leftArrow" src={leftArrow} alt="Flèche de défilement gauche" onClick={previousPicture} />
+            )}
+            {pictures.length >1 && (
+                <img className="rightArrow" src={rightArrow} alt="Flèche de défilement droite" onClick={nextPicture} />
+            )}
+            {pictures.map ((picture, index) => {
+                return (
+                    <div key={index}>
+                        {index === currentPhoto && (
+                            <img className="slideshowImg" src={picture} alt={picture.desccription} />
+                        )}
+                        {index === currentPhoto && (
+                            <div className="slideshowImgNumber">
+                                {currentPhoto +1}/{pictures.length}
+                            </div>
+                        )}
+                    </div>
+                );
+            })}     
+        </section>   
+    );
 }
 

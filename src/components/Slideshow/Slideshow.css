@@ -1,80 +1,60 @@
 .slideshowContainer {
-
-width: 1240px;
-height: 415px;
-border-radius: 25px;
-background-color:  #F6F6F6;
-position: relative;
-}
-
-.slideshow {
-
-width: 100%;
-height: 100%;
-display: flex;
-justify-content: space-between;
-align-items: center;
+    position: relative;
+    width: 92%;
+    margin: 5% 5% 2% 5%;
 }
 
 .slideshowImg {
-
-width: 100%;
-height: 100%;
-border-radius: 25px;
-object-fit: cover;
-background-color: #F6F6F6;
+    width: 100%;
+    height:415px;
+    border-radius: 25px;
+    object-fit: cover;
 }
 
-.slideshowLeftArrow {
-
-height: 79.19px;
-width: 46.68px;
-left: 23.35px;
-top: 8.39px;
-opacity: 87%;
-position: absolute;
+.slideshowImgNumber {
+    font-size: 18px;
+    top: 88%;
+    left: 49%;
+    position: absolute;
+    color: #fff;
 }
 
-.slideshowLeftArrowInvisible {
-
-opacity: 0;
+.leftArrow, .rightArrow {
+    position: absolute;
+    z-index: 1;
+    cursor: pointer;
+    top: 40%;
+    width: 50px;
+    height: 80px;
 }
 
-.slideshowRightArrow {
-
-position: absolute;
-width: 46.68px;
-height: 79.2px;
-left: 25.96px;
-top: 8.4px;
-opacity: 87%;
+.leftArrow {
+    left: 20px;
 }
 
-.slideshowRightArrowInvisible {
-
-opacity: 0;
+.rightArrow {
+    right: 20px;
 }
 
-.slideshowPhotoNumber {
+/***********************************Media Queries***********************/
 
-position: absolute;
-left: 48.95%;
-right: 49.11%;
-top: 86.19%;
-bottom: 6.01%;
-font-family: 'Montserrat';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 142.6%;
-display: flex;
-align-items: flex-end;
-text-align: center;
-color: #FFFFFF;
-opacity: 87%;
+@media all and (max-width: 768px) {
+
+    .slideshowContainer {
+        width: 90%;
+    }
+
+    .slideshowImg {
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .leftArrow, .rightArrow {
+        width: 12px;
+        height: 20px;
+        top: 45%;
+    }
+
+    
 }
 
-.slideshowPhotoNumberInvisible {
-
-opacity: 0;
-}
