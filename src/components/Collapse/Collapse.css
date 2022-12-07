@@ -19,6 +19,7 @@
     padding: 20px 10px;
     height: 47px;
     font-size: 24px;
+    font-family: "Montserrat";
 }
 
 .collapseArrow {
@@ -42,6 +43,7 @@ width: 100%;
 margin-bottom: 15px;
 padding: 20px 10px;
 font-size: 24px;
+font-family: "Montserrat";
 }
 .collapseContent ul {
     list-style-type: none;

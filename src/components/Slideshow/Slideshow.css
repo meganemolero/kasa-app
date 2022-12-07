@@ -17,6 +17,8 @@
     left: 49%;
     position: absolute;
     color: #fff;
+    font-family: 'Montserrat';
+
 }
 
 .leftArrow, .rightArrow {
