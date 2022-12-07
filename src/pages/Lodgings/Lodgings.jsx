@@ -47,8 +47,8 @@ export default function Lodgings() {
                           content={<span className="lodgingsDetailsCollapsesContent">{`${description}`}</span>}/>
                 <Collapse className="lodgingsCollContent" title="Equipements" content={
                     <ul className="lodgingsDetailsCollapsesContent">
-                        {equipments.map((equipment) => {
-                            return <li key={`$equipment`}>{equipment}</li>
+                        {equipments.map((equip) => {
+                            return <li key={`$equipment`}>{equip}</li>
                         })}
                     </ul>  
                 }/>
