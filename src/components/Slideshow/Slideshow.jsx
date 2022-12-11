@@ -22,7 +22,7 @@ export default function Slideshow() {
             {pictures.length > 1 && (
                 <img className="leftArrow" src={leftArrow} alt="Flèche de défilement gauche" onClick={previousPicture} />
             )}
-            {pictures.length >1 && (
+            {pictures.length > 1 && (
                 <img className="rightArrow" src={rightArrow} alt="Flèche de défilement droite" onClick={nextPicture} />
             )}
             {pictures.map ((picture, index) => {
