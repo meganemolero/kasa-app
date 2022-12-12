@@ -1,16 +1,20 @@
+//Import des composants nécessaires//
 import Banner from "../../components/Banner/Banner"
-import ImgBannerAbout from "../../datas/Images/ImgBannerAbout.png"
-// import ImgBannerAboutMobile from "../../datas/Images/ImgBannerAboutMobile.png"
 import Collapse from "../../components/Collapse/Collapse"
+//import de l'image de la bannière//
+import ImgBannerAbout from "../../datas/Images/ImgBannerAbout.png"
+//import du CSS//
 import "./About.css"
 
-
+//Export de la fonction//
 export default function About() {
     return (
+        //Création de la structure de la page//
         <div>   
+            {/* Banner avec son image spécifique à cette page  */}
             <Banner src= {ImgBannerAbout} alt="Photo de montagnes" className="bannerAboutDesktop"/>
-            {/* <Banner src= {ImgBannerAboutMobile} alt="Photo de montagnes version mobile" className="bannerAboutMobile" /> */}
             <div className="aboutContainer">
+                {/* Différents collapse avec chacun leur titre et leur contenu */}
                 <Collapse  
                     className="collapseAbout"
                     title="Fiabilité"

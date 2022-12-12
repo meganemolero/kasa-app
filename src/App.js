@@ -4,7 +4,7 @@ import Home from './pages/Home/Home';
 import Lodgings from './pages/Lodgings/Lodgings';
 import { Routes , Route } from 'react-router-dom'
 
- 
+//Fonction qui va servir de routeur// 
 export default function App() {
     return (
         <Routes>

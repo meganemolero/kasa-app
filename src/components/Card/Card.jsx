@@ -1,5 +1,5 @@
 
-
+//Utilisations des props pour passer les propriétés à l'élément enfant//
 export default function Card(props) {
     return (
             <figure 
